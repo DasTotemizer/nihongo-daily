@@ -16,7 +16,7 @@ export function Wordmark({ size = 30 }: { size?: number }) {
   return (
     <View style={{ flexDirection: 'row', alignItems: 'flex-end' }} accessible accessibilityRole="header" accessibilityLabel="Nihongo Daily">
       <Text style={{ fontFamily: fonts.masthead, fontSize: size, lineHeight: size * 1.25, color: p.text }}>日本語</Text>
-      <Text style={{ fontFamily: fonts.headlineBold, fontSize: size * 1.02, lineHeight: size * 1.25, color: p.brand, marginLeft: 6 }}>Daily</Text>
+      <Text style={{ fontFamily: fonts.headlineBold, fontSize: size * 1.02, lineHeight: size * 1.25, color: p.brandInk, marginLeft: 6 }}>Daily</Text>
     </View>
   );
 }

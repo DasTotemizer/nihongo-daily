@@ -1,5 +1,5 @@
 [
-  { "id": "grammar", "name": "Grammar", "nameJa": "文法", "description": "How Japanese sentences work, one idea at a time.", "accent": "#B3261E", "order": 1 },
+  { "id": "grammar", "name": "Grammar", "nameJa": "文法", "description": "How Japanese sentences work, one idea at a time.", "accent": "#8A6400", "order": 1 },
   { "id": "vocabulary", "name": "Vocabulary", "nameJa": "語彙", "description": "Useful words, grouped the way you meet them.", "accent": "#1F6F5C", "order": 2 },
   { "id": "sentence-structure", "name": "Sentence Structure", "nameJa": "文の組み立て", "description": "Word order, clauses and how ideas join together.", "accent": "#7A4E9A", "order": 3 },
   { "id": "everyday", "name": "Everyday Japanese", "nameJa": "日常会話", "description": "Phrases for shops, stations, greetings and small talk.", "accent": "#B5651D", "order": 4 },

@@ -11,7 +11,7 @@ function LinkText({ url, children }: { url: string; children: string }) {
   const p = usePalette();
   return (
     <Pressable onPress={() => Linking.openURL(url)} accessibilityRole="link">
-      <T v="ui" style={{ color: p.brand, marginTop: 6 }}>
+      <T v="ui" style={{ color: p.brandInk, marginTop: 6 }}>
         {children}
       </T>
     </Pressable>

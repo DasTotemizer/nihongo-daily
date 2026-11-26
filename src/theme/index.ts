@@ -10,7 +10,11 @@ export interface Palette {
   textMuted: string;
   rule: string;
   ruleStrong: string;
+  /** Saffron: fills, rules, bars and markers. */
   brand: string;
+  /** Saffron dark enough to read as text or icons on the page background. */
+  brandInk: string;
+  /** Text placed on a saffron fill. */
   brandText: string;
   accentSoft: string;
   good: string;
@@ -31,9 +35,10 @@ export const light: Palette = {
   textMuted: '#7A7773',
   rule: '#E4E0D9',
   ruleStrong: '#141414',
-  brand: '#B3261E',
-  brandText: '#FFFFFF',
-  accentSoft: '#F7E7E5',
+  brand: '#F4C430',
+  brandInk: '#8A6400',
+  brandText: '#1A1400',
+  accentSoft: '#FCF0C8',
   good: '#1E7B4F',
   goodSoft: '#E3F1E9',
   bad: '#B3261E',
@@ -52,9 +57,10 @@ export const dark: Palette = {
   textMuted: '#8C8982',
   rule: '#2C2C2F',
   ruleStrong: '#F1EFEA',
-  brand: '#E5483B',
-  brandText: '#FFFFFF',
-  accentSoft: '#3A1D1A',
+  brand: '#F4C430',
+  brandInk: '#F4C430',
+  brandText: '#1A1400',
+  accentSoft: '#3A300F',
   good: '#5CC28E',
   goodSoft: '#16291F',
   bad: '#F07167',

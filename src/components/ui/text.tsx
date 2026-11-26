@@ -39,7 +39,7 @@ export interface TProps extends TextProps {
 
 export function T({ v = 'ui', color = 'text', scale = 1, style, ...rest }: TProps) {
   const p = usePalette();
-  const c = { text: p.text, secondary: p.textSecondary, muted: p.textMuted, brand: p.brand, inverse: p.brandText }[color];
+  const c = { text: p.text, secondary: p.textSecondary, muted: p.textMuted, brand: p.brandInk, inverse: p.brandText }[color];
   const b = base[v];
   const scaled = scale === 1 ? b : { ...b, fontSize: (b.fontSize ?? 16) * scale, lineHeight: (b.lineHeight ?? 20) * scale };
   return <Text maxFontSizeMultiplier={1.6} {...rest} style={[scaled, { color: c }, style]} />;

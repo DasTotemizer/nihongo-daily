@@ -25,7 +25,7 @@ export function Translation({ en, style }: { en: string; style?: object }) {
   }
   return (
     <Pressable onPress={() => setShown(true)} hitSlop={8} accessibilityRole="button" style={{ marginTop: 6, alignSelf: 'flex-start' }}>
-      <T v="meta" style={{ color: p.brand }}>
+      <T v="meta" style={{ color: p.brandInk }}>
         Show translation
       </T>
     </Pressable>
@@ -138,7 +138,7 @@ export function BlockView({ block }: { block: Block }) {
           </T>
           {block.lines.map((l, i) => (
             <View key={i} style={{ flexDirection: 'row', marginTop: 12 }}>
-              <T v="meta" style={{ width: 58, fontFamily: fonts.sansMedium, color: i % 2 ? p.brand : p.text, paddingTop: s.furigana ? 14 : 4 }}>
+              <T v="meta" style={{ width: 58, fontFamily: fonts.sansMedium, color: i % 2 ? p.brandInk : p.text, paddingTop: s.furigana ? 14 : 4 }}>
                 {l.speaker}
               </T>
               <View style={{ flex: 1 }}>

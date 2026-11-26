@@ -9,7 +9,7 @@ export default function TabsLayout() {
     <NativeTabs
       backgroundColor={p.bg}
       indicatorColor={p.accentSoft}
-      iconColor={{ default: p.textMuted, selected: p.brand }}
+      iconColor={{ default: p.textMuted, selected: p.brandInk }}
       labelStyle={{ default: { color: p.textMuted }, selected: { color: p.text } }}>
       <NativeTabs.Trigger name="index">
         <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>

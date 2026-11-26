@@ -65,7 +65,7 @@ function Feedback({ correct, why, onRetry }: { correct: boolean; why: QuizQuesti
       <InlineText text={why} style={{ fontFamily: fonts.serif, fontSize: 16 * s.textScale, lineHeight: 23 * s.textScale, color: p.text, marginTop: 6 }} />
       {!correct && onRetry ? (
         <Pressable onPress={onRetry} accessibilityRole="button" style={{ marginTop: 10, alignSelf: 'flex-start' }} hitSlop={8}>
-          <T v="meta" style={{ color: p.brand, fontFamily: fonts.sansMedium }}>
+          <T v="meta" style={{ color: p.brandInk, fontFamily: fonts.sansMedium }}>
             Try this one again
           </T>
         </Pressable>

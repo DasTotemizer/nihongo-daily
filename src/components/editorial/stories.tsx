@@ -52,7 +52,7 @@ export function StoryMeta({ card, state, showDifficulty = false }: { card: Artic
           </T>
         </View>
       ) : started ? (
-        <T v="meta" style={{ color: p.brand, marginLeft: 10 }}>
+        <T v="meta" style={{ color: p.brandInk, marginLeft: 10 }}>
           {Math.round(state!.progress * 100)}% read
         </T>
       ) : (
@@ -153,7 +153,7 @@ export function SectionHeading({ title, ja, action }: { title: string; ja?: stri
         </View>
         {action ? (
           <Pressable onPress={action.onPress} hitSlop={10} accessibilityRole="button">
-            <T v="meta" style={{ color: p.brand, fontFamily: fonts.sansMedium }}>
+            <T v="meta" style={{ color: p.brandInk, fontFamily: fonts.sansMedium }}>
               {action.label}
             </T>
           </Pressable>

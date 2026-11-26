@@ -153,7 +153,7 @@ export default function ArticleScreen() {
       <IconButton name="arrow-back" label="Back" onPress={() => (router.canGoBack() ? router.back() : router.replace('/'))} />
       <View style={{ flexDirection: 'row' }}>
         <IconButton name="translate" label="Reading aids: furigana, romaji, translations and text size" onPress={() => setAidsOpen(true)} />
-        <IconButton name={saved ? 'bookmark' : 'bookmark-border'} label={saved ? 'Remove from Saved' : 'Save article'} color={saved ? p.brand : undefined} onPress={toggleSave} />
+        <IconButton name={saved ? 'bookmark' : 'bookmark-border'} label={saved ? 'Remove from Saved' : 'Save article'} color={saved ? p.brandInk : undefined} onPress={toggleSave} />
       </View>
     </View>
   );

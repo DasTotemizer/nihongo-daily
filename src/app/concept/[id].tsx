@@ -61,10 +61,10 @@ export default function ConceptPage() {
             {concept.taeKimLesson}
           </T>
           <Pressable onPress={() => Linking.openURL(GUIDE_URL)} accessibilityRole="link" style={{ flexDirection: 'row', alignItems: 'center', marginTop: 8 }}>
-            <T v="meta" style={{ color: p.brand, fontFamily: fonts.sansMedium }}>
+            <T v="meta" style={{ color: p.brandInk, fontFamily: fonts.sansMedium }}>
               Open the guide
             </T>
-            <Icon name="open-in-new" size={14} color={p.brand} />
+            <Icon name="open-in-new" size={14} color={p.brandInk} />
           </Pressable>
         </View>
 
@@ -75,7 +75,7 @@ export default function ConceptPage() {
             </T>
             {prereqs.map((c) => (
               <Pressable key={c!.id} onPress={() => router.push({ pathname: '/concept/[id]', params: { id: c!.id } })} accessibilityRole="link" style={{ paddingVertical: 6 }}>
-                <T v="ui" style={{ color: p.brand }}>
+                <T v="ui" style={{ color: p.brandInk }}>
                   {c!.name}
                 </T>
               </Pressable>

@@ -32,15 +32,15 @@ const W = 1200;
 const H = 750;
 
 const PALETTES = {
-  vermilion: { bg: '#E9E2D4', ink: '#1C1B1A', accent: '#C0392B', soft: '#D7CBB5' },
+  vermilion: { bg: '#E9E2D4', ink: '#1C1B1A', accent: '#EAAA12', soft: '#D7CBB5' },
   indigo: { bg: '#1E2A44', ink: '#F3EEE3', accent: '#E0A43A', soft: '#2C3B5C' },
   matcha: { bg: '#DDE3CF', ink: '#1F2A1E', accent: '#5E7D3A', soft: '#C6CFB3' },
   sakura: { bg: '#F4E4E1', ink: '#2A1E22', accent: '#C9566E', soft: '#EACFCB' },
-  night: { bg: '#121417', ink: '#F2F0EA', accent: '#E5483B', soft: '#23272D' },
+  night: { bg: '#121417', ink: '#F2F0EA', accent: '#F4C430', soft: '#23272D' },
   sea: { bg: '#D6E4E8', ink: '#13252E', accent: '#2C6E8F', soft: '#BCD3DA' },
   ochre: { bg: '#EFE2C6', ink: '#2A2116', accent: '#B5651D', soft: '#E0CDA5' },
   plum: { bg: '#2B1E2E', ink: '#F4EDE6', accent: '#D98AA0', soft: '#3D2C41' },
-  paper: { bg: '#F5F2EC', ink: '#161616', accent: '#B3261E', soft: '#E6E0D5' },
+  paper: { bg: '#F5F2EC', ink: '#161616', accent: '#EAAA12', soft: '#E6E0D5' },
 };
 
 const grain = `<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.07"/></feComponentTransfer></filter><rect width="${W}" height="${H}" filter="url(#grain)"/>`;

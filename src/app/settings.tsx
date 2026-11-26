@@ -132,7 +132,7 @@ export default function SettingsScreen() {
       <SectionHeading title="Your data" ja="データ" />
       <Pressable onPress={exportData} accessibilityRole="button" style={[styles.row, { borderTopColor: p.rule }]}>
         <View style={{ flex: 1 }}>
-          <T v="ui" style={{ color: p.brand }}>
+          <T v="ui" style={{ color: p.brandInk }}>
             Export a backup
           </T>
           <T v="meta" color="muted">

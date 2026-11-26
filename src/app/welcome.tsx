@@ -32,7 +32,7 @@ export default function Welcome() {
           {body}
         </T>
       </View>
-      <Icon name="arrow-forward" color={p.brand} />
+      <Icon name="arrow-forward" color={p.brandInk} />
     </Pressable>
   );
 
