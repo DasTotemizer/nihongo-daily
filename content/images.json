@@ -1,0 +1,407 @@
+[
+  {
+    "id": "cover-three-scripts",
+    "file": "assets/covers/cover-three-scripts.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Hiragana, katakana and a kanji set side by side on a paper grid",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-hiragana",
+    "file": "assets/covers/cover-hiragana.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana あ set large on soft pink rings",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-hiragana-extras",
+    "file": "assets/covers/cover-hiragana-extras.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana が, with its two small marks, on an ochre grid",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-katakana",
+    "file": "assets/covers/cover-katakana.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The katakana カナ in cream on deep indigo",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-kanji",
+    "file": "assets/covers/cover-kanji.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The kanji for mountain and river on a pale green grid",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-da",
+    "file": "assets/covers/cover-da.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana だ on cream rings with a red sun",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-da-forms",
+    "file": "assets/covers/cover-da-forms.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word だった in pale ink on plum",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-particle-wa",
+    "file": "assets/covers/cover-particle-wa.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana は set large on a cream grid with a red sun",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-particle-mo",
+    "file": "assets/covers/cover-particle-mo.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana も above a blue wave pattern",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-particle-ga",
+    "file": "assets/covers/cover-particle-ga.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana が in white on near-black with a red sun",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-na-adjectives",
+    "file": "assets/covers/cover-na-adjectives.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana な on pink ruled lines",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-i-adjectives",
+    "file": "assets/covers/cover-i-adjectives.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana い on ochre rings",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-verbs",
+    "file": "assets/covers/cover-verbs.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The verb する in cream on indigo with a gold sun",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-verb-negative",
+    "file": "assets/covers/cover-verb-negative.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word ない on ruled paper",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-verb-past",
+    "file": "assets/covers/cover-verb-past.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana た on pale green rings",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-particle-wo",
+    "file": "assets/covers/cover-particle-wo.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana を above a wave pattern with a red sun",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-particle-ni",
+    "file": "assets/covers/cover-particle-ni.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana に on a pale blue grid",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-particle-de",
+    "file": "assets/covers/cover-particle-de.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana で on plum rings with a pink sun",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-relative-clauses",
+    "file": "assets/covers/cover-relative-clauses.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The kanji for book in white on dark ruled lines",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-noun-particles",
+    "file": "assets/covers/cover-noun-particles.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana の on an ochre grid",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-ne-yo",
+    "file": "assets/covers/cover-ne-yo.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana ね on soft pink rings",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-polite-masu",
+    "file": "assets/covers/cover-polite-masu.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending ます in cream above an indigo wave pattern",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-polite-desu",
+    "file": "assets/covers/cover-polite-desu.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana か on pale green ruled lines",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-wa-vs-ga",
+    "file": "assets/covers/cover-wa-vs-ga.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The particles は and が side by side on a paper grid",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-particle-mistakes",
+    "file": "assets/covers/cover-particle-mistakes.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A bold cross mark on cream ruled lines",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-ru-or-u",
+    "file": "assets/covers/cover-ru-or-u.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana る on pale blue rings",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-dropping-you",
+    "file": "assets/covers/cover-dropping-you.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Two speech bubbles in conversation",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-long-sentences",
+    "file": "assets/covers/cover-long-sentences.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The kanji for sentence on ruled paper",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-vocab-food",
+    "file": "assets/covers/cover-vocab-food.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A bowl of noodles with chopsticks",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-vocab-time",
+    "file": "assets/covers/cover-vocab-time.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A wall calendar with one day marked in red",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-vocab-family",
+    "file": "assets/covers/cover-vocab-family.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Three paper lanterns hanging in a row",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-vocab-town",
+    "file": "assets/covers/cover-vocab-town.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A town skyline with lit windows",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-vocab-weather",
+    "file": "assets/covers/cover-vocab-weather.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Mountains under a large sun",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-vocab-verbs",
+    "file": "assets/covers/cover-vocab-verbs.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A city at night with lit windows",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-greetings",
+    "file": "assets/covers/cover-greetings.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Waves under a rising red sun",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-at-konbini",
+    "file": "assets/covers/cover-at-konbini.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A small shop front with a striped awning",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-directions",
+    "file": "assets/covers/cover-directions.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A train passing under a large sun",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-sorry-thanks",
+    "file": "assets/covers/cover-sorry-thanks.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A cup of green tea with rising steam",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-self-intro",
+    "file": "assets/covers/cover-self-intro.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Two speech bubbles on paper",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-konbini-culture",
+    "file": "assets/covers/cover-konbini-culture.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A lit shop front at night",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-train-etiquette",
+    "file": "assets/covers/cover-train-etiquette.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A commuter train on its tracks",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-seasonal-food",
+    "file": "assets/covers/cover-seasonal-food.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A branch of cherry blossom",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-new-year",
+    "file": "assets/covers/cover-new-year.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A red shrine gate in front of a pale sun",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-recap-scripts",
+    "file": "assets/covers/cover-recap-scripts.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Hiragana and katakana a in white on dark grid",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-recap-particles",
+    "file": "assets/covers/cover-recap-particles.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The particles を, に and で above a blue wave pattern",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  }
+]

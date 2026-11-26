@@ -1,56 +1,83 @@
-# Welcome to your Expo app 👋
+# 日本語 Daily
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A daily Japanese-learning newspaper for Android. Each morning a new edition arrives: today's lesson, plus a few short supporting pieces that use only the grammar you have already met. Everything works offline.
 
-## Get started
+Built with Expo (SDK 58), React Native, TypeScript, expo-router and SQLite. The lesson order follows Tae Kim's Guide to Japanese Grammar; all articles, examples, quizzes and illustrations are original.
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Running it
 
 ```bash
-npm run reset-project
+npm install
+npx expo start          # then press a for Android, or w for the web preview
+npm test                # publishing rules, content markup, search
+npm run typecheck
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+To install on a phone, make a build with EAS:
 
-### Other setup steps
+```bash
+npx eas build -p android --profile preview   # produces an installable .apk
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+The web preview is for quick checks only. On the web, the tab bar sits at the top of the screen; on Android it is at the bottom.
 
-## Learn more
+## How it fits together
 
-To learn more about developing your project with Expo, look at the following resources:
+| Folder | What lives there |
+| --- | --- |
+| `content/` | The article library as text files, plus categories, concepts, edition templates and cover settings |
+| `scripts/content/` | The content compiler, which checks every article and writes `src/generated/content-pack.json` |
+| `scripts/covers/` | Renders the cover illustrations from `content/covers.json` |
+| `src/domain/` | Publishing rules: daily editions, back issues, lesson order and revision |
+| `src/data/` | The two SQLite databases. `content.db` is rebuilt from the content pack; `user.db` holds reading history, bookmarks, quiz results and settings, and only changes through migrations |
+| `src/app/` | Screens (expo-router) |
+| `src/components/` | Reading, quiz and newspaper layout components |
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+User data rows have UUIDs, `updated_at` times, soft deletes and a `sync_outbox` table, so a sync service such as Supabase can be added later without reshaping the data.
 
-## Join the community
+## Writing articles
 
-Join our community of developers creating universal apps.
+Articles are files in `content/articles/`. Run `npm run content` after any change: it refuses to build if a kanji has no reading, a concept is unknown, a related article is missing, or a lesson comes before its prerequisites.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Front matter:
+
+```
+id: particle-de
+kind: core            # core, feature, vocab, everyday, japan_today or revision
+category: grammar
+stage: 2
+difficulty: 2
+minutes: 7
+image: cover-particle-de
+sequence: 220         # core lessons only: their place in the course
+concepts: teaches particle-de; practises particle-ni-he
+related: particle-ni-he, five-particle-mistakes
+headline: で: where it happens   # no kanji in headlines or summaries
+headlineJa: 「で」は場所と手段
+summary: One or two sentences.
+published: 2026-11-26
+version: 1
+```
+
+Japanese markup: words are separated by spaces, and every kanji needs a reading, written `{漢字|かんじ}`. Blocks start with `::: example`, `breakdown`, `vocab`, `dialogue`, `mistake`, `callout`, `quote`, `image`, `kana` or `quiz` and end with `:::`. The existing articles show each one in use.
+
+Supporting pieces must list the concepts they `practise`. A piece waits until the reader has finished the lessons that teach those concepts (the writing-system lessons never hold anything back, since every piece has furigana and translations).
+
+Edition templates in `content/editions.json` decide which supporting pieces appear in which edition. Core lessons are not listed there; they are placed by the reader's progress.
+
+To change an article later, copy the old file to `content/articles/history/<id>@<version>.md`, raise `version` and add a `changeNote`.
+
+## Covers
+
+Covers are original illustrations rendered from `content/covers.json`. To render them you need Noto Serif JP and Noto Sans JP font files:
+
+```bash
+FONT_DIR=/path/to/fonts npm run build:covers
+npm run content
+```
+
+Photos can replace any cover: drop a JPEG in `assets/covers/`, add it to `content/images.json` with its credit and licence, and rebuild the content.
+
+## Licences
+
+Fonts are under the SIL Open Font License (see `assets/fonts/`). The curriculum order credits Tae Kim's Guide to Japanese Grammar; no text from the guide is reproduced.

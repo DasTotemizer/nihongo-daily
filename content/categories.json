@@ -1,0 +1,12 @@
+[
+  { "id": "grammar", "name": "Grammar", "nameJa": "文法", "description": "How Japanese sentences work, one idea at a time.", "accent": "#8A6400", "order": 1 },
+  { "id": "vocabulary", "name": "Vocabulary", "nameJa": "語彙", "description": "Useful words, grouped the way you meet them.", "accent": "#1F6F5C", "order": 2 },
+  { "id": "sentence-structure", "name": "Sentence Structure", "nameJa": "文の組み立て", "description": "Word order, clauses and how ideas join together.", "accent": "#7A4E9A", "order": 3 },
+  { "id": "everyday", "name": "Everyday Japanese", "nameJa": "日常会話", "description": "Phrases for shops, stations, greetings and small talk.", "accent": "#B5651D", "order": 4 },
+  { "id": "reading", "name": "Reading Practice", "nameJa": "読む練習", "description": "Short passages to read slowly and enjoy.", "accent": "#2F5D8A", "order": 5 },
+  { "id": "culture", "name": "Japanese Culture", "nameJa": "文化", "description": "Customs, seasons and traditions.", "accent": "#8A3B5B", "order": 6 },
+  { "id": "travel", "name": "Travel Japan", "nameJa": "旅行", "description": "Trains, towns and getting around.", "accent": "#2E7D8C", "order": 7 },
+  { "id": "food", "name": "Food and Lifestyle", "nameJa": "食と暮らし", "description": "What people eat, buy and do every day.", "accent": "#9C6B00", "order": 8 },
+  { "id": "modern", "name": "Modern Japan", "nameJa": "現代の日本", "description": "Technology, work and city life today.", "accent": "#4A5568", "order": 9 },
+  { "id": "revision", "name": "Revision", "nameJa": "復習", "description": "Recaps that bring earlier lessons back together.", "accent": "#5B6B2E", "order": 10 }
+]

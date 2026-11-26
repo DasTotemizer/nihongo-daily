@@ -1,0 +1,12 @@
+[
+  { "number": 1, "articles": ["greetings", "konbini-culture"] },
+  { "number": 2, "articles": ["vocab-food", "sorry-and-thanks"] },
+  { "number": 3, "articles": ["train-etiquette", "vocab-time", "seasonal-food"] },
+  { "number": 4, "articles": ["stage1-recap", "new-year"] },
+  { "number": 5, "articles": ["dropping-i-and-you", "vocab-family"] },
+  { "number": 6, "articles": ["wa-vs-ga", "ru-or-u-verb"] },
+  { "number": 7, "articles": ["vocab-daily-verbs", "five-particle-mistakes"] },
+  { "number": 8, "articles": ["vocab-town", "particles-recap"] },
+  { "number": 9, "articles": ["reading-long-sentences", "vocab-weather"] },
+  { "number": 10, "articles": ["at-the-konbini", "asking-directions", "self-introduction"] }
+]

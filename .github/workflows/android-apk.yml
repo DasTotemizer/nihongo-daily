@@ -1,0 +1,64 @@
+name: Android test build
+
+# Builds an installable APK and attaches it to a GitHub Release,
+# so it can be downloaded straight to a phone.
+on:
+  push:
+    branches: [main, v1-build]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - run: npm ci
+
+      - name: Check content and tests
+        run: |
+          npm run content
+          npx jest
+          npx tsc --noEmit
+
+      - name: Generate the Android project
+        run: npx expo prebuild --platform android --no-install
+
+      - name: Build the APK
+        working-directory: android
+        run: ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=arm64-v8a,armeabi-v7a
+
+      - name: Name the file
+        run: cp android/app/build/outputs/apk/release/app-release.apk nihongo-daily.apk
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          target_commitish: ${{ github.sha }}
+          name: 日本語 Daily test build ${{ github.run_number }}
+          make_latest: true
+          files: nihongo-daily.apk
+          body: |
+            Test build from `${{ github.ref_name }}` (${{ github.sha }}).
+
+            To install on Android: tap **nihongo-daily.apk** below, open the downloaded file, and allow installs from this source if your phone asks.
