@@ -94,17 +94,6 @@ export function JaText({ line, ...opts }: { line: JaLine } & JaOptions) {
   );
 }
 
-/** Japanese inside an English sentence: readings go in brackets after kanji words. */
-function inlineJa(tokens: JaLine, furigana: boolean, showRomaji: boolean): { main: string; extra: string } {
-  const main = surface(tokens);
-  const parts: string[] = [];
-  if (furigana && tokens.some((t) => t.s.some((s) => s.r && KANJI.test(s.b)))) {
-    parts.push(tokens.map((t) => t.s.map((s) => s.r ?? s.b).join('')).join(''));
-  }
-  if (showRomaji) parts.push(romaji(tokens));
-  return { main, extra: parts.length ? `（${parts.join(', ')}）` : '' };
-}
-
 export function InlineText({ text, style, scale = 1 }: { text: Inline; style?: TextStyle | TextStyle[]; scale?: number }) {
   const p = usePalette();
   const settings = useSettings();
@@ -119,11 +108,21 @@ export function InlineText({ text, style, scale = 1 }: { text: Inline; style?: T
             </Text>
           );
         }
-        const { main, extra } = inlineJa(run.tokens, settings.furigana, settings.romaji);
+        const jaSize = 17 * scale * settings.textScale;
+        const rubyStyle = { fontFamily: fonts.sans, color: p.ruby, fontSize: 12 * scale * settings.textScale };
         return (
           <Text key={i}>
-            <Text style={{ fontFamily: fonts.sans, fontWeight: run.bold ? '700' : undefined, fontSize: 17 * scale * settings.textScale }}>{main}</Text>
-            {extra ? <Text style={{ fontFamily: fonts.sans, color: p.ruby, fontSize: 13 * scale * settings.textScale }}>{extra}</Text> : null}
+            {run.tokens.map((t, j) => {
+              const base = t.s.map((x) => x.b).join('');
+              const hasKanji = t.s.some((x) => x.r && KANJI.test(x.b));
+              return (
+                <Text key={j}>
+                  <Text style={{ fontFamily: fonts.sans, fontWeight: run.bold ? '700' : undefined, fontSize: jaSize }}>{base}</Text>
+                  {settings.furigana && hasKanji ? <Text style={rubyStyle}>{`（${t.s.map((x) => x.r ?? x.b).join('')}）`}</Text> : null}
+                </Text>
+              );
+            })}
+            {settings.romaji ? <Text style={{ ...rubyStyle, fontFamily: fonts.serifItalic }}>{` (${romaji(run.tokens)})`}</Text> : null}
           </Text>
         );
       })}

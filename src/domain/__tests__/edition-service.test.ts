@@ -152,6 +152,18 @@ describe('daily publishing with a real database', () => {
     expect((await content.search('summary about extra-12')).map((r) => r.id)).toEqual(['extra-12']);
   });
 
+  it('holds back supporting pieces until their grammar has been taught', async () => {
+    const { content, user } = await setup();
+    const [mon] = await issueDueEditions(content, user, DEFAULT_SETTINGS, new Date(2026, 10, 23, 8, 0));
+    // extra-1 practises concept 1, which lesson-1 teaches and the reader has not read yet.
+    expect(mon.articleIds).not.toContain('extra-1');
+    expect(mon.articleIds).toContain('extra-2');
+    await user.open('lesson-1', 1);
+    await user.complete('lesson-1', 1);
+    const [tue] = await issueDueEditions(content, user, DEFAULT_SETTINGS, new Date(2026, 10, 24, 8, 0));
+    expect(tue.articleIds).toContain('extra-1');
+  });
+
   it('lets kana readers skip Stage 1', async () => {
     const { content, user } = await setup();
     expect((await currentNextLesson(content, user, { ...DEFAULT_SETTINGS, startingPoint: 'kana' }))?.id).toBe('lesson-1');

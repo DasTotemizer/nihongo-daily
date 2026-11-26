@@ -148,7 +148,8 @@ function pushMixed(runs: Inline, text: string, bold: boolean, italic: boolean, w
     if (jaBuf) {
       const words = jaBuf.split('_').filter(Boolean);
       const tokens: JaLine = [];
-      for (const w of words) tokens.push(...parseJaLine(w, where));
+      // In prose, each {kanji|reading} group becomes its own word so its reading sits right after it.
+      for (const w of words) tokens.push(...parseJaLine(w.replace(/(\{[^}]+\})/g, ' $1 '), where));
       const run: InlineRun = { k: 'ja', tokens };
       if (bold) run.bold = true;
       runs.push(run);

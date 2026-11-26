@@ -8,7 +8,7 @@ minutes: 7
 image: cover-particle-wa
 sequence: 120
 concepts: teaches particle-wa; practises state-of-being
-related:
+related: state-of-being, particle-mo, particle-ga
 headline: Understanding は: the Japanese topic marker
 headlineJa: 「は」は何をする？
 summary: It is written ha but said wa, and it may be the most useful little word in Japanese. Here is what は really does, and why English has nothing quite like it.

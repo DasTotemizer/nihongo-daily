@@ -225,7 +225,7 @@ function parseFenced(
       return {
         type: 'vocab',
         items: listItems(inner).map((item) => {
-          const [ja, meaning, pos] = item.split('|').map((s) => s.trim());
+          const [ja, meaning, pos] = item.split(/\s+\|\s+/).map((s) => s.trim());
           if (!meaning) throw new MarkupError(`${where}: vocab items are "- word | meaning | part of speech"`);
           return { ja: parseJaLine(ja, where), meaning, ...(pos ? { pos } : {}) };
         }),
@@ -262,6 +262,21 @@ function parseFenced(
       };
     case 'image':
       return { type: 'image', image: need(f, 'id', where), ...(f.get('caption') ? { caption: f.get('caption') } : {}) };
+    case 'kana': {
+      const title = f.get('title');
+      const rows = inner
+        .filter((l) => l.trim() && !l.startsWith('title:'))
+        .map((l) =>
+          l.split('|').map((cell) => {
+            const c = cell.trim();
+            if (c === '' || c === '-') return null;
+            const [k, r] = c.split(/\s+/);
+            if (!r) throw new MarkupError(`${where}: kana cells are "か ka"`);
+            return { k, r };
+          }),
+        );
+      return { type: 'kana', ...(title ? { title } : {}), rows };
+    }
     case 'quiz':
       return { type: 'quiz', questions: parseQuiz(inner, where, quiz, articleId) };
     default:

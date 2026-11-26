@@ -75,6 +75,8 @@ export type Block =
   | { type: 'callout'; title?: string; text: Inline }
   | { type: 'quote'; ja: JaLine; en: string; source?: string }
   | { type: 'image'; image: string; caption?: string }
+  /** A grid of kana with romaji; empty cells are null. */
+  | { type: 'kana'; title?: string; rows: ({ k: string; r: string } | null)[][] }
   | { type: 'quiz'; questions: string[] };
 
 export type ArticleKind = 'core' | 'feature' | 'vocab' | 'everyday' | 'japan_today' | 'revision';

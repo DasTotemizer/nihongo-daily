@@ -90,7 +90,7 @@ export function buildPack(root: string): { pack: ContentPack; warnings: string[]
     for (const p of conceptById.get(cid)?.prereqs ?? []) {
       const pseq = taughtAt.get(p);
       if (pseq === undefined) warnings.push(`concept ${cid} needs ${p}, which no core lesson teaches yet`);
-      else if (pseq >= seq) errors.push(`concept ${cid} (lesson ${seq}) is taught before its prereq ${p} (lesson ${pseq})`);
+      else if (pseq > seq) errors.push(`concept ${cid} (lesson ${seq}) is taught before its prereq ${p} (lesson ${pseq})`);
     }
   }
 
@@ -120,7 +120,9 @@ export function buildPack(root: string): { pack: ContentPack; warnings: string[]
       if (b.type !== 'vocab') continue;
       for (const it of b.items) {
         const written = surfaceOf(it.ja);
-        const id = `${written}`;
+        const formLabel = it.pos && /^(present|negative|past|past negative|statement|polite|plain)$/.test(it.pos);
+        if (formLabel || written.includes("→") || it.ja.length > 3) continue; // conjugation charts and phrases, not words
+        const id = written;
         if (!vocab.has(id)) {
           vocab.set(id, { id, written, reading: readingOf(it.ja), romaji: romajiOf(it.ja), meaning: it.meaning, pos: it.pos });
         }

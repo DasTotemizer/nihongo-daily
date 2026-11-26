@@ -113,6 +113,18 @@ export class ContentRepo {
     return new Map(rows.map((r) => [r.id, JSON.parse(r.prereqs_json)]));
   }
 
+  /** Concepts each article practises: a supporting piece waits until these have been taught. */
+  async practised(ids: string[]): Promise<Map<string, string[]>> {
+    const out = new Map<string, string[]>(ids.map((id) => [id, []]));
+    if (!ids.length) return out;
+    const rows = await this.db.all<{ article_id: string; concept_id: string }>(
+      `SELECT article_id, concept_id FROM article_concept WHERE role = 'practises' AND article_id IN (${ids.map(() => '?').join(',')})`,
+      ids,
+    );
+    for (const r of rows) out.get(r.article_id)?.push(r.concept_id);
+    return out;
+  }
+
   async templateCount(): Promise<number> {
     return (await this.db.first<{ n: number }>('SELECT count(*) AS n FROM edition_template'))?.n ?? 0;
   }

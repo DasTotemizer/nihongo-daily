@@ -206,6 +206,36 @@ export function BlockView({ block }: { block: Block }) {
         </View>
       );
     }
+    case 'kana':
+      return (
+        <View style={{ marginHorizontal: GUTTER, marginTop: 18 }}>
+          {block.title ? (
+            <T v="label" color="muted" style={{ marginBottom: 6 }}>
+              {block.title}
+            </T>
+          ) : null}
+          <View style={{ borderTopWidth: 2, borderTopColor: p.ruleStrong }}>
+            {block.rows.map((row, r) => (
+              <View key={r} style={{ flexDirection: 'row', borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: p.rule }}>
+                {row.map((cell, c) => (
+                  <View key={c} style={{ flex: 1, alignItems: 'center', paddingVertical: 8 }} accessible={!!cell} accessibilityLabel={cell ? `${cell.k}, ${cell.r}` : undefined}>
+                    {cell ? (
+                      <>
+                        <T v="ui" style={{ fontSize: 26 * s.textScale, lineHeight: 34 * s.textScale }}>
+                          {cell.k}
+                        </T>
+                        <T v="meta" color="muted" style={{ fontFamily: fonts.serifItalic }}>
+                          {cell.r}
+                        </T>
+                      </>
+                    ) : null}
+                  </View>
+                ))}
+              </View>
+            ))}
+          </View>
+        </View>
+      );
     case 'quiz':
       return null; // rendered by the article screen, which owns quiz state
   }
