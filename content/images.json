@@ -403,5 +403,527 @@
     "alt": "The particles を, に and で above a blue wave pattern",
     "credit": "日本語 Daily illustration",
     "licence": "Original artwork"
+  },
+  {
+    "id": "cover-transitive",
+    "file": "assets/covers/cover-transitive.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The kanji for open in two forms on a vermilion background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-addressing",
+    "file": "assets/covers/cover-addressing.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The title さん set large on a indigo background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-te-form",
+    "file": "assets/covers/cover-te-form.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana て set large on a matcha background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-kara",
+    "file": "assets/covers/cover-kara.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word から set large on a sakura background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-tari",
+    "file": "assets/covers/cover-tari.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending たり set large on a night background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-te-iru",
+    "file": "assets/covers/cover-te-iru.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending ている set large on a sea background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-te-oku",
+    "file": "assets/covers/cover-te-oku.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending ておく set large on a ochre background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-potential",
+    "file": "assets/covers/cover-potential.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The verb できる set large on a plum background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-naru",
+    "file": "assets/covers/cover-naru.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The verb なる set large on a paper background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-to-nara",
+    "file": "assets/covers/cover-to-nara.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word なら set large on a vermilion background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-tara",
+    "file": "assets/covers/cover-tara.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending たら set large on a indigo background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-must",
+    "file": "assets/covers/cover-must.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word だめ set large on a matcha background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-tai",
+    "file": "assets/covers/cover-tai.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending たい set large on a sakura background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-volitional",
+    "file": "assets/covers/cover-volitional.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending よう set large on a night background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-quoting",
+    "file": "assets/covers/cover-quoting.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Japanese quotation brackets set large on a sea background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-to-iu",
+    "file": "assets/covers/cover-to-iu.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The phrase という set large on a ochre background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-te-miru",
+    "file": "assets/covers/cover-te-miru.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The verb みる set large on a plum background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-giving",
+    "file": "assets/covers/cover-giving.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The verb あげる set large on a paper background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-requests",
+    "file": "assets/covers/cover-requests.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word ください set large on a vermilion background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-numbers",
+    "file": "assets/covers/cover-numbers.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The kanji for one, two and three on a indigo background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-casual",
+    "file": "assets/covers/cover-casual.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The casual ending じゃん set large on a matcha background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-causative",
+    "file": "assets/covers/cover-causative.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending させる set large on a sakura background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-passive",
+    "file": "assets/covers/cover-passive.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending られる set large on a night background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-honorific",
+    "file": "assets/covers/cover-honorific.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The kanji for respect set large on a sea background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-humble",
+    "file": "assets/covers/cover-humble.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The humble verb 申す set large on a ochre background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-shimau",
+    "file": "assets/covers/cover-shimau.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The casual ending ちゃった set large on a plum background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-koto",
+    "file": "assets/covers/cover-koto.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word こと set large on a paper background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-certainty",
+    "file": "assets/covers/cover-certainty.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word かも set large on a vermilion background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-dake",
+    "file": "assets/covers/cover-dake.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word だけ set large on a indigo background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-mitai",
+    "file": "assets/covers/cover-mitai.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word みたい set large on a matcha background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-rashii",
+    "file": "assets/covers/cover-rashii.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word らしい set large on a sakura background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-hou",
+    "file": "assets/covers/cover-hou.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word より set large on a night background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-yasui",
+    "file": "assets/covers/cover-yasui.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending やすい set large on a sea background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-zu",
+    "file": "assets/covers/cover-zu.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The old negative ず set large on a ochre background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-wake",
+    "file": "assets/covers/cover-wake.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word わけ set large on a plum background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-nagara",
+    "file": "assets/covers/cover-nagara.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending ながら set large on a paper background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-mama",
+    "file": "assets/covers/cover-mama.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word まま set large on a vermilion background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-de-aru",
+    "file": "assets/covers/cover-de-aru.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The formal ending である set large on a indigo background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-hazu",
+    "file": "assets/covers/cover-hazu.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word はず set large on a matcha background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-sae",
+    "file": "assets/covers/cover-sae.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The particle さえ set large on a sakura background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-garu",
+    "file": "assets/covers/cover-garu.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending がる set large on a night background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-zaru",
+    "file": "assets/covers/cover-zaru.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The characters 得ず set large on a sea background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-gachi",
+    "file": "assets/covers/cover-gachi.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending がち set large on a ochre background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-mai",
+    "file": "assets/covers/cover-mai.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending まい set large on a plum background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-darake",
+    "file": "assets/covers/cover-darake.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The ending だらけ set large on a paper background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-inaya",
+    "file": "assets/covers/cover-inaya.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The kanji 否 set large on a vermilion background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-ageku",
+    "file": "assets/covers/cover-ageku.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word あげく set large on a indigo background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-recap-te",
+    "file": "assets/covers/cover-recap-te.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The hiragana て on a recap cover on a matcha background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-four-ifs",
+    "file": "assets/covers/cover-four-ifs.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word もし, meaning if, set large on a sakura background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-recap-stage3",
+    "file": "assets/covers/cover-recap-stage3.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word for grammar set large on a night background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-recap-seems",
+    "file": "assets/covers/cover-recap-seems.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The word そう set large on a sea background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-recap-final",
+    "file": "assets/covers/cover-recap-final.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "The kanji for complete set large on a ochre background",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-restaurant",
+    "file": "assets/covers/cover-restaurant.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A bowl of food with chopsticks",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-ladder",
+    "file": "assets/covers/cover-ladder.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Two speech bubbles, one above the other",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-phone",
+    "file": "assets/covers/cover-phone.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Office towers with lit windows",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-forecast",
+    "file": "assets/covers/cover-forecast.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "Mountains under a sun, for the weather",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-feelings",
+    "file": "assets/covers/cover-feelings.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A branch of cherry blossom",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
+  },
+  {
+    "id": "cover-news",
+    "file": "assets/covers/cover-news.jpg",
+    "width": 1200,
+    "height": 750,
+    "alt": "A city skyline in newspaper tones",
+    "credit": "日本語 Daily illustration",
+    "licence": "Original artwork"
   }
 ]

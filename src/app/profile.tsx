@@ -9,7 +9,7 @@ import { weakConcepts } from '@/domain/publisher';
 import { useData, usePalette } from '@/state/app';
 import { GUTTER } from '@/theme';
 
-const STAGE_NAMES = ['', 'Foundations', 'Basic Grammar', 'Essential Grammar', 'Intermediate', 'Advanced'];
+const STAGE_NAMES = ['', 'Foundations', 'Basic Grammar', 'Essential Grammar', 'Special Expressions', 'Advanced Topics'];
 
 export default function Profile() {
   const p = usePalette();

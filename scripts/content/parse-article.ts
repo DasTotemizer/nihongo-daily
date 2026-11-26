@@ -24,6 +24,11 @@ function fields(lines: string[]): Map<string, string> {
   return map;
 }
 
+/** Plain-text fields can't show furigana, so {漢字|かんじ} is shown as its base text. */
+export function plainText(s: string): string {
+  return s.replace(/\{([^|}]+)\|[^}]*\}/g, '$1');
+}
+
 function need(map: Map<string, string>, key: string, where: string): string {
   const v = map.get(key);
   if (!v) throw new MarkupError(`${where}: missing "${key}:"`);
@@ -207,14 +212,14 @@ function parseFenced(
       return {
         type: 'example',
         ja: parseJaLine(need(f, 'ja', where), where),
-        en: need(f, 'en', where),
+        en: plainText(need(f, 'en', where)),
         ...(f.get('note') ? { note: parseInline(f.get('note')!, where) } : {}),
       };
     case 'breakdown':
       return {
         type: 'breakdown',
         ja: parseJaLine(need(f, 'ja', where), where),
-        en: need(f, 'en', where),
+        en: plainText(need(f, 'en', where)),
         parts: listItems(inner).map((item) => {
           const [ja, gloss] = item.split(/\s=\s/);
           if (!gloss) throw new MarkupError(`${where}: breakdown items are "- word = meaning"`);
@@ -227,7 +232,7 @@ function parseFenced(
         items: listItems(inner).map((item) => {
           const [ja, meaning, pos] = item.split(/\s+\|\s+/).map((s) => s.trim());
           if (!meaning) throw new MarkupError(`${where}: vocab items are "- word | meaning | part of speech"`);
-          return { ja: parseJaLine(ja, where), meaning, ...(pos ? { pos } : {}) };
+          return { ja: parseJaLine(ja, where), meaning: plainText(meaning), ...(pos ? { pos: plainText(pos) } : {}) };
         }),
       };
     case 'dialogue':
@@ -238,7 +243,7 @@ function parseFenced(
           .map((l) => {
             const m = l.trim().match(/^([^:]+):\s*(.+?)\s*\/\/\s*(.+)$/);
             if (!m) throw new MarkupError(`${where}: dialogue lines are "Name: Japanese // English"`);
-            return { speaker: m[1].trim(), ja: parseJaLine(m[2], where), en: m[3].trim() };
+            return { speaker: plainText(m[1].trim()), ja: parseJaLine(m[2], where), en: plainText(m[3].trim()) };
           }),
       };
     case 'mistake':
@@ -251,13 +256,13 @@ function parseFenced(
     case 'callout': {
       const title = f.get('title');
       const text = inner.filter((l) => !l.startsWith('title:')).join(' ').trim();
-      return { type: 'callout', ...(title ? { title } : {}), text: parseInline(text, where) };
+      return { type: 'callout', ...(title ? { title: plainText(title) } : {}), text: parseInline(text, where) };
     }
     case 'quote':
       return {
         type: 'quote',
         ja: parseJaLine(need(f, 'ja', where), where),
-        en: need(f, 'en', where),
+        en: plainText(need(f, 'en', where)),
         ...(f.get('source') ? { source: f.get('source') } : {}),
       };
     case 'image':
@@ -317,12 +322,12 @@ function parseQuiz(inner: string[], where: string, quiz: QuizQuestion[], article
       const words = need(f, 'words', w)
         .split(/\s+/)
         .map((x) => parseJaLine(x, w));
-      quiz.push({ id, type: 'order', concept, prompt, words, en: need(f, 'en', w), why });
+      quiz.push({ id, type: 'order', concept, prompt, words, en: plainText(need(f, 'en', w)), why });
     } else if (type === 'match') {
       const pairs = listItems(g).map((item) => {
         const [ja, en] = item.split(/\s=\s/);
         if (!en) throw new MarkupError(`${w}: match items are "- Japanese = English"`);
-        return { ja: parseJaLine(ja, w), en: en.trim() };
+        return { ja: parseJaLine(ja, w), en: plainText(en.trim()) };
       });
       quiz.push({ id, type: 'match', concept, prompt, pairs, why });
     } else {
