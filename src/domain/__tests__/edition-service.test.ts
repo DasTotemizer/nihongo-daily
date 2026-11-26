@@ -164,6 +164,19 @@ describe('daily publishing with a real database', () => {
     expect(tue.articleIds).toContain('extra-1');
   });
 
+  it('never holds pieces back for the writing-system lessons', async () => {
+    const cdb = openNodeDb();
+    const udb = openNodeDb();
+    const p = pack();
+    p.articles[0].stage = 1; // lesson-1 teaches c1, which extra-1 practises
+    await ensureContent(cdb, p);
+    await migrateUserDb(udb);
+    const content = new ContentRepo(cdb);
+    const user = new UserRepo(udb, () => new Date(2026, 10, 23, 8, 0));
+    const [mon] = await issueDueEditions(content, user, DEFAULT_SETTINGS, new Date(2026, 10, 23, 8, 0));
+    expect(mon.articleIds).toContain('extra-1');
+  });
+
   it('lets kana readers skip Stage 1', async () => {
     const { content, user } = await setup();
     expect((await currentNextLesson(content, user, { ...DEFAULT_SETTINGS, startingPoint: 'kana' }))?.id).toBe('lesson-1');

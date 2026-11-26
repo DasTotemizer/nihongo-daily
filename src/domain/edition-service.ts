@@ -21,7 +21,9 @@ async function progress(content: ContentRepo, user: UserRepo, settings: Settings
     lessonSkips(content, settings),
   ]);
   const done = (l: LessonInfo) => read.has(l.id) || skipped.has(l.id);
-  const covered = new Set(lessons.filter(done).flatMap((l) => l.teaches));
+  // Stage 1 (the writing system) never holds a piece back: every article carries furigana,
+  // romaji and translations, so a brand-new reader can enjoy the supporting pieces from day one.
+  const covered = new Set(lessons.filter((l) => done(l) || l.stage === 1).flatMap((l) => l.teaches));
   const taughtSomewhere = new Set(lessons.flatMap((l) => l.teaches));
   return { lessons, read, prereqs, skipped, covered, taughtSomewhere };
 }

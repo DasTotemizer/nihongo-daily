@@ -92,7 +92,7 @@ export default function Archive() {
                       {lead?.headline ?? issue.title}
                     </T>
                     <T v="meta" color={read === issue.articleIds.length ? 'muted' : 'secondary'} style={{ marginTop: 4 }}>
-                      {issue.articleIds.length} articles · {read === issue.articleIds.length ? 'all read' : `${read} read`}
+                      {issue.articleIds.length} {issue.articleIds.length === 1 ? 'article' : 'articles'} · {read === issue.articleIds.length ? 'all read' : `${read} read`}
                     </T>
                   </View>
                   {lead ? <Cover imageId={lead.imageId} aspect={1} style={{ width: 64 }} accent={lead.accent} /> : null}
